@@ -104,7 +104,7 @@ resource "aws_security_group" "allow_all" {
 
 # terraform.tf
 terraform {
- backend “s3” {
+ backend 's3' {
  encrypt = true
  bucket = "shelbycloud.xyz"
  dynamodb_table = "terraform-state-lock-dynamo"
